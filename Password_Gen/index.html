@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col items-center justify-center">
+    <div class="bg-[cornflowerblue] container h-[100vh] text-[grey] flex flex-col items-center justify-center font-bold gap-6">
+        <h1 class="text-3xl text-[DarkBlue]">
+            Password Generator
+        </h1>
+        <div class="display-cont bg-[black] w-[300px] h-[50px] flex items-center justify-between pl-5 pr-5 rounded-lg">
+            <input readonly placeholder="Password" class="disp bg-[black] text-[white]" dataPdisp>
+            <button ccopy-btn class="">
+                <span datacopymsg></span>
+                <!-- <span></span> -->
+                <i class="fa-regular fa-copy" style="color: #5b86ec;"></i>
+            </button>
+        </div>
+
+        <div class="inut-cont bg-[black] w-[300px] flex flex-col p-5 justify-center rounded-lg gap-4">
+            <div class="length-cont flex items-center justify-between">
+                <p>Passwrod length</p>
+                <p data-lenght class="text-white"></p>
+            </div>
+
+            <input type="range" min="1" max="20"  step="1" data-length-slider>
+            
+            <div>
+                <div>
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">uppercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase">
+                    <label for="lowercase">lowercase</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbol">
+                    <label for="symbol">symbol</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="number">
+                    <label for="number">number</label>
+                </div>
+            </div>            
+
+            <div class="strength flex justify-between pr-3">
+                <p>strength</p>
+                <div data-indi class="w-[0.5rem] h-[0.5rem] rounded-full"></div>
+            </div>
+
+            <button class="gen-pass bg-[DarkBlue] text-[whitesmoke] pt-2 pb-2 rounded-lg">
+                Generate Password
+            </button>
+        </div>
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/c7d72159c1.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

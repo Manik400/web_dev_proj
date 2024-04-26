@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(221, 230, 233);
+}
+.hr1{
+    border-style: dotted none none;
+    border-color: red;
+    border-width: 5px;
+}
+hr {
+    border-style: dotted none none;
+    border-color: red;
+    border-width: 5px;
+    /* height: 0; */
+    width: 5%;
+}
+h1 :hover{
+    color: #5787c5;
+}
+h3 {
+    color: #5787c5;
+}
+img:hover{
+    border-radius: 100%;
+}
+.str1:hover{
+    color: #5787c5
+}

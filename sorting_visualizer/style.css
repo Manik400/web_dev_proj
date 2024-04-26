@@ -1,0 +1,16 @@
+#container{
+    height: 400px;
+    display: flex;
+    /* flex-wrap: wrap-reverse; */
+    align-items: flex-end;
+}
+body{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.bar{
+    margin: 1px;   
+    background-color: red;
+    width: 5px;
+}
